@@ -1,0 +1,28 @@
+stim_count: 21
+stim_start_frame: 320
+stim_step: 400
+stim_window_ca:
+- 0
+- 100
+stim_window_hbt:
+- 20
+- 100
+subtr_baseline: prestart_mean
+subtr_baseline_interval: 20
+substim_count: 4
+substim_interval: 20
+substim_window:
+- 1
+- 4
+save_formats:
+  - hdf5
+  - bmp
+  - overlay
+load_format: hdf5
+stim_1d:
+  stim_start_frame: 300
+  stim_count: 21
+  stim_step: 400
+  stim_window: [0, 400]
+  subtr_baseline: prestart_mean
+  subtr_baseline_interval: 20

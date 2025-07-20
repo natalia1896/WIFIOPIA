@@ -1,0 +1,34 @@
+Ca_corr_method: LSTM
+Xest_em: 0.57
+Xest_ex: 0.56
+all_exp_dir: D:\Test_exp
+br_y: 0.35
+dir_coeff_abs: C:\NL\Ext_hb_coeff.csv
+dir_est_path: C:\NL\Est_pathlenght.csv
+im_n: 323
+image: 1
+img_number:
+- 8800
+- 17600
+lambdaF_em: 514
+lambdaF_ex: 470
+lambdaR_1: 530
+lambdaR_2: 656
+lambdaF_ex_pattern: [0,2]
+lambdaR_1_pattern: [1,4]
+lambdaR_2_pattern: [3,4]
+mark_Tvt: false
+rate: 20
+rate_noneq: true
+rotation: 0
+scalingfactor: 25
+save_format: zarr
+mask_format: hdf5
+save_conv: true
+plot_control: true
+Remove_global: true
+global_smooth_win: 20
+mice_to_include:
+exp_to_include:
+protocols_to_include:
+state_to_include:

@@ -1,0 +1,55 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+env/
+venv/
+ENV/
+.venv/
+*.env
+
+# Conda environment folders (optional, in case you use named environments)
+*.conda
+*.conda_env
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# System-specific files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Allow tracking specific files in data/
+# Ignore everything in data/...
+data/*
+
+# ...except CSV files
+!data/*.csv
+
+# ...and except Data_article subfolder and its contents
+!data/Data_article/
+!data/Data_article/**
+
+# Allow requirements/config files
+!.gitignore
+!requirements.txt
+!config.yaml
+!config_stim.yaml
+
+# Ignore large or sensitive data manually if needed
+# e.g., ignore binary files or experimental data:
+# data/raw_experiments/
