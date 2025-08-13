@@ -630,10 +630,10 @@ def convert_to_dchb(
 
     # === Extinction coefficients ===
     try:
-        epsHbO1 = coeff_abs.loc[coeff_abs['Wave'] == lambda_1, 'HbO'].values[0]
-        epsHbR1 = coeff_abs.loc[coeff_abs['Wave'] == lambda_1, 'HbR'].values[0]
-        epsHbO2 = coeff_abs.loc[coeff_abs['Wave'] == lambda_2, 'HbO'].values[0]
-        epsHbR2 = coeff_abs.loc[coeff_abs['Wave'] == lambda_2, 'HbR'].values[0]
+        epsHbO1 = coeff_abs.loc[coeff_abs['Wave'] == lambda_1, 'HbO'].values[0] * np.log(10)
+        epsHbR1 = coeff_abs.loc[coeff_abs['Wave'] == lambda_1, 'HbR'].values[0] * np.log(10)
+        epsHbO2 = coeff_abs.loc[coeff_abs['Wave'] == lambda_2, 'HbO'].values[0] * np.log(10)
+        epsHbR2 = coeff_abs.loc[coeff_abs['Wave'] == lambda_2, 'HbR'].values[0] * np.log(10)
     except IndexError:
         raise ValueError(f"Missing extinction coefficient data for wavelengths {lambda_1} or {lambda_2}.")
 
